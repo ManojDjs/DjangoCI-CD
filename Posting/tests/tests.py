@@ -14,7 +14,7 @@ class PostTestMehods(TestCase):
         self.assertEqual(lion.Post_Name, 'New Post for Testing4')
         self.assertEqual(cat.Post_Name, 'New Post for Testing5')
 
-    def description_check(self):
+    def test_description_check(self):
         lion = Post.objects.get(Post_Name="New Post for Testing4")
         cat = Post.objects.get(Post_Name="New Post for Testing5")
         self.assertEqual(lion.Description, 'New Description')
